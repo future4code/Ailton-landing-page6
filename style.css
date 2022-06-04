@@ -152,10 +152,42 @@ margin-left: 88px;
     border-bottom: solid 1px rgb(42, 42, 99) ;
     margin-bottom: 15px;
     color: rgb(42, 42, 99);
+    
 }
     
 
 #titulo-produtos h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* começo da section 3 */
+
+.prod2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 5% ;
+    padding: 2%;
+    
+}
+
+.quarto h2{
+    font-size: 19px;
+}
+.quarto h3{
+    margin-top: 8px;
+    font-size: 17px;
+}
+.quarto{
+    border: solid 1px grey;
+    font-size: medium;
+    
+}
+
+.quarto img{
+ width: 100%;
+ 
+}
+#titulo-produtos h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -181,6 +213,9 @@ margin-left: 88px;
 .prod1{
     grid-template-columns:1fr 1fr;
 }  
+.prod2{
+    grid-template-columns: 1fr 1fr;
+}
 
 #h3{
     margin-top: 15px ;
@@ -193,3 +228,9 @@ margin-left: 88px;
     margin-bottom: 4%;
 }
     }
+
+
+
+
+
+
