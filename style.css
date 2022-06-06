@@ -1,12 +1,11 @@
 * {
     padding: 0;
     margin: 0;
-
     box-sizing: border-box;
     font-size: 1.2rem;
 
 }
-
+/* !header{ */
 a>i {
     font-size: 2rem;
 }
@@ -21,17 +20,8 @@ a>i {
     border: 2px solid aqua;
     cursor: pointer;
 }
-
 body {
-    background-color: red;
-}
-
-#container {
     background-color: rgb(19, 34, 53);
-    display: grid;
-    grid-template-rows: 1fr 100% 1fr;
-
-    grid-template-columns: repeat(3, 1fr);
 }
 
 header {
@@ -109,18 +99,6 @@ a:hover {
     padding: 10px;
 }
 
-main {
-    display: grid;
-    border: 2px solid black;
-    grid-column: 1/-1;
-    background-color: darkgray;
-}
-
-
-.home {
-    height: 20px;
-}
-
 #app {
     grid-area: app;
     color: aqua;
@@ -176,126 +154,42 @@ footer {
     color: white;
 }
 
-
-/* footer:hover{
-  
-} */
-@media screen and (max-device-width : 480px) {
-
-    /* celulares */
-    #cabecalho {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-
-    #logo {
-        grid-column: 1/3;
-        grid-row: 1/1;
-        height: 50px;
-
-    }
-
-    #inscreva-se-btn {
-        grid-column: 2/3;
-        grid-row: 1/1;
-    }
-    #caixa-menu-top {
-
-        width: 70%;
-        grid-column: 1/3;
-        grid-row: 2/2;
-    }
-    
-    #caixa-menu-top>a {
-        font-size: 1rem;
-    }
-    footer {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas:
-            'app'
-            'socialM'
-            'area-produto-footer'
-            'area-sobre-footer'
-            'area-logo-footer'
-            'help';
-    }
-}
-
-
-
-
-
-@media screen and (min-device-width: 481px) and (max-device-width: 821px) {
-
-    /* tablets */
-    #cabecalho {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-
-    #logo {
-        grid-column: 1/3;
-        grid-row: 1/1;
-        height: 50px;
-
-    }
-
-    #inscreva-se-btn {
-        grid-column: 2/3;
-        grid-row: 1/1;
-    }
-    #caixa-menu-top {
-
-        width: 70%;
-        grid-column: 1/3;
-        grid-row: 2/2;
-    }
-    
-    #caixa-menu-top>a {
-        font-size: 1rem;
-    }
-    
-    footer {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-            'app socialM'
-            'area-produto-footer area-sobre-footer'
-            'area-logo-footer help';
-    }
-}
-
-
-
-
  
+#container {
+    background-color: rgb(19, 34, 53);
+    display: grid;
+    grid-template-rows: 1fr 100% 1fr;
+
+    grid-template-columns: repeat(5, 1fr);
 }
+
+main {
+    display: grid;
+    border: 2px solid black;
+    grid-column: 1/-1;
+    background-color: darkgray;
+}
+
+
 
 /* PAGINA PRINCIPAL/HOME */
 
 .home{
-    height: 90vh;   
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap: 10% ;
-    background-color: #40637d;
-}
+    height: 100%;   
+  display: grid;
+  
+  
+    background-color:chartreuse ;
+}  
 
-.texto-gatilho {
+ /* background-image: url(./img/background-home-new.png); */
+
+ .texto-gatilho {
 
     font-family:Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: aliceblue;
     font-size: 1.5rem;
-    background-image: url(./img/background-home-new.png);
+   
     background-size: cover;
     display: flex;
      flex-direction: column;
@@ -304,35 +198,29 @@ footer {
      border-radius: 5px;
      height:110%;
      width: 110%;
-    
-    
-}
-.texto-gatilho h1{
+} .texto-gatilho h1{
   margin-left: 38px;
 }
 .texto-gatilho h2{
     margin-top: 10px;
     font-size: 90%;
 
-}
-
-.search-box{
-    background-color: white;
+}  .search-box{
+    background-image: url(./img/background-home-new.png);
+   text-align: center;
     font-family: sans-serif;
-    color:#40637d;
+    color:white;
     background-color: rgb(253, 219, 225);
-    border-radius: 8px;
+    font-size:medium ;
     
    
-}
-#h3{
+}  #h3{
 
     margin-top:10px ;
     margin-left: 20%;
     justify-content: center;
     
-}
-.formulario{
+}  .formulario{
     border-top: solid 4px white;
     height: 80%;
     font-size: 1.3rem;
@@ -341,25 +229,20 @@ footer {
     justify-content: center;
    
     
-}
-
-
+} 
 #aluguel{
     margin-top: 7%;
     margin-bottom: 7%;
-}
-
-
+} 
 #button-box{
 margin-top: 10%;
 margin-left: 88px;
 
-}
-.icons-rede-social img{
+}  .icons-rede-social img{
      
   height: 70%;
   
-}
+} 
 .icons-rede-social{
      
     display: flex;
@@ -426,17 +309,25 @@ margin-left: 88px;
     font-size: 19px;
 }
 .quarto h3{
+   
+    
     margin-top: 8px;
     font-size: 17px;
 }
 .quarto{
-    border: solid 1px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px black;
     font-size: medium;
-    
+    box-shadow: 5px darkcyan;
 }
 
 .quarto img{
  width: 100%;
+ max-width: 185px;
+ max-height: 125px;
  
 }
 #titulo-produtos h1{
@@ -445,7 +336,7 @@ margin-left: 88px;
 
 /* RESPONSIVIDADE PARA CELULAR */
 
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media screen and (min-device-width : 300px) and (max-device-width : 480px) {
    .texto-gatilho{
    grid-column: span 2;
     width: 100%;
@@ -460,7 +351,8 @@ margin-left: 88px;
 }
    .search-box{
     grid-column: span 2; 
-    border-radius: 0;
+padding: 15px;
+
    }
 .prod1{
     grid-template-columns:1fr 1fr;
@@ -486,3 +378,99 @@ margin-left: 88px;
 
 
 
+
+    @media screen and (max-device-width : 480px) {
+
+        /* celulares */
+        #cabecalho {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+    
+        }
+    
+        #logo {
+            grid-column: 1/3;
+            grid-row: 1/1;
+            height: 50px;
+    
+        }
+    
+        #inscreva-se-btn {
+            grid-column: 2/3;
+            grid-row: 1/1;
+        }
+        #caixa-menu-top {
+    
+            width: 70%;
+            grid-column: 1/3;
+            grid-row: 2/2;
+        }
+        
+        #caixa-menu-top>a {
+            font-size: 1rem;
+        }
+        footer {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas:
+                'app'
+                'socialM'
+                'area-produto-footer'
+                'area-sobre-footer'
+                'area-logo-footer'
+                'help';
+        }
+    }
+    
+    
+    
+    
+    
+    @media screen and (min-device-width: 481px) and (max-device-width: 821px) {
+    
+        /* tablets */
+        #cabecalho {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+    
+        }
+    
+        #logo {
+            grid-column: 1/3;
+            grid-row: 1/1;
+            height: 50px;
+    
+        }
+    
+        #inscreva-se-btn {
+            grid-column: 2/3;
+            grid-row: 1/1;
+        }
+        #caixa-menu-top {
+    
+            width: 70%;
+            grid-column: 1/3;
+            grid-row: 2/2;
+        }
+        
+        #caixa-menu-top>a {
+            font-size: 1rem;
+        }
+        
+        footer {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                'app socialM'
+                'area-produto-footer area-sobre-footer'
+                'area-logo-footer help';
+        }
+    }
+    
+    
