@@ -167,7 +167,7 @@ main {
     display: grid;
     border: 2px solid black;
     grid-column: 1/-1;
-    background-color: darkgray;
+    background: linear-gradient(to bottom, #526aee 0%, #f1abd7 100%);
 }
 
 
@@ -175,12 +175,12 @@ main {
 /* PAGINA PRINCIPAL/HOME */
 
 .home{
-    height: 100%;   
-  display: grid;
-  
-  
-    background-color:chartreuse ;
-}  
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10% ;
+    background-color: #40637d;
+}
 
  /* background-image: url(./img/background-home-new.png); */
 
@@ -271,9 +271,10 @@ margin-left: 88px;
     font-size: 17px;
 }
 .kitnet{
-    border: solid 1px grey;
+    background-color: white;
+    border: solid 5px grey;
     font-size: medium;
-    
+    align-items: center;
 }
 
 .kitnet img{
@@ -322,12 +323,16 @@ margin-left: 88px;
     border: solid 1px black;
     font-size: medium;
     box-shadow: 5px darkcyan;
+    background-color: white;
+    border: solid 5px grey;
+    font-size: medium;
+    align-items: center;
 }
 
 .quarto img{
  width: 100%;
- max-width: 185px;
- max-height: 125px;
+ max-width: 285px;
+ max-height: 225px;
  
 }
 #titulo-produtos h1{
