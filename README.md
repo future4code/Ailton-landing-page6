@@ -1,4 +1,5 @@
 # landing-page-template
+
 PROJETO SITE  F4LIFE
 
 [Link para acessar o site](https://spiffy-request.surge.sh)
@@ -26,3 +27,4 @@ Tecnologias usadas
 Pessoas Desenvolvedoras do Projeto:
 
 ⚆ André Luiz ⚆ Leonardo Chagas⚆ Myllena Moreira Miranda
+
